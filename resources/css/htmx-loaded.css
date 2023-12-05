@@ -1,0 +1,7 @@
+.only-js {
+    display: inherit;
+}
+
+.only-no-js {
+    display: none;
+}

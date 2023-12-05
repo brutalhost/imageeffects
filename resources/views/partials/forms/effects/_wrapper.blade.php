@@ -3,6 +3,7 @@
       hx-swap="outerHTML"
       hx-trigger="change from:(#effect-params-form .form-range) delay:750ms, keyup from:(#effect-params-form .form-control) delay:750ms, click from:#effect-params-form__submit"
       hx-disinherit="*"
+      hx-indicator="#form_loading_indicator"
 >
     @csrf
     <div id="effect-params-form__inputs">
@@ -12,5 +13,5 @@
     <div id="ajax-error" class="text-danger mb-2" role="alert">
     </div>
 
-    <button id="effect-params-form__submit" class="btn btn-primary" type="submit">Submit</button>
+    <button id="effect-params-form__submit" class="btn btn-primary only-no-js" type="submit">Submit</button>
 </form>

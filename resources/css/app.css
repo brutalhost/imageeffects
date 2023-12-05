@@ -3,17 +3,6 @@
 @import "toastify-js/src/toastify.css";
 @import 'bootstrap-icons/font/bootstrap-icons.min.css';
 
-.image-loading-spinner {
-    --bs-spinner-width: 3rem;
-    --bs-spinner-height: 3rem;
-    --bs-spinner-border-width: 0.4rem;
-}
-
-.image-loading-grow {
-    --bs-spinner-width: 4rem;
-    --bs-spinner-height: 4rem;
-}
-
 .transparent-background {
     --cell-color: #cfdaea;
     background-image: linear-gradient(45deg, var(--cell-color) 25%, transparent 25%, transparent 74%, var(--cell-color) 75%, var(--cell-color)),
@@ -24,4 +13,18 @@
 
 .feature {
     font-size: 3rem;
+}
+
+.only-no-js {
+    display: inherit;
+}
+
+.only-js {
+    display: none;
+}
+
+#form_loading_indicator {
+    font-weight: bolder;
+    -webkit-text-stroke: 0.125rem black;
+    -webkit-text-fill-color: white;
 }

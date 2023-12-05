@@ -1,51 +1,36 @@
 # ImageEffects
-![](C:\OSPanel\domains\imageeffects.loc\public\storage\screenshot.png)
-**ImageEffects** - это сайт, предоставляющий набор фильтров для обработки изображений в реальном времени. Он реализован с использованием следующих технологий:
 
+![Site demonstration](./storage/app/public/ImageEffect.webm)
 
-- **Laravel**: Backend PHP фреймворк.
-- **Htmx**: клиентские AJAX запросы.
-- **Bootstrap 5**: CSS фреймворк с поддержкой старых браузеров.
-- **Imagick**: серверная библиотека для обработки изображений.
+**ImageEffects**  is a website that provides a set of filters for real-time image processing. It is implemented using the following technologies:
 
-### Возможности
+- **Laravel**: Backend PHP framework.
+- **HTMX**: Client-side AJAX requests.
+- **Bootstrap 5**: CSS framework with support for older browsers.
+- **Imagick**: Server-side image processing library.
 
-- Фильтры обрабатывают изображения на сервере без необходимости перезагрузки страницы.
-- Обработанные изображения скачиваются в лучшем качестве.
-- Приложение полностью доступно для устройств без поддержки JavaScript.
+### Features
 
-### Эффекты
+- Filters process images on the server without the need to reload the page.
+- Processed images can be downloaded in the highest quality.
+- The application is fully accessible for devices without JavaScript support.
 
-1. *Трафарет* - создаёт изображение с ограниченным количеством цветов.
-2. *Полароид* - применяет эффект полароидной фотографии.
-3. *Демотиватор* - добавляет текст с демотивационной цитатой к изображению.
+### Effects
 
-## Установка
-1. Переименуйте `.env.example` в `.env` и заполните поля подключения к базе данных
-2. `php artisan key:generate`
-3. `php artisan migrate`
-4. `php artisan db:seed --class Database\Seeders\DatabaseSeeder`
-5. `npm install`
+1. Stencil - creates an image with a limited number of colors.
+2. Polaroid - applies a polaroid photo effect.
+3. Demotivator - adds text with a demotivational quote to the image.
 
-### Использование
+## Installation
+1. Rename `.env.example` to `.env` and fill in the database connection fields.
+2. Run `php artisan key:generate`.
+3. Run `php artisan migrate`.
+4. Run `php artisan db:seed --class Database\Seeders\DatabaseSeeder`.
+5. Run `npm install`.
 
-1. Запустите локальный сервер: `php artisan serve`.
-2. Сгенерируйте ассеты `npm run build` или `npm run dev` для разработки.
-3. Откройте веб-браузер и перейдите по адресу http://localhost:8000
-4. Выберите изображение для обработки и примените один из доступных эффектов.
+### Usage
 
-## Резюме
-
-Проект создавался для "обкатки" AJAX библиотек. После попыток использования Livewire, Alpine AJAX и HTMX я сделал вывод, что для полноценного приложения ImageEffect требуется больший контроль состояния на стороне клиента. Наилучшим решением было бы использование Livewire, Vue, React и т.д. Но по главному критерию "необходимо и достаточно" больше всех подошёл HTMX.
-
-##### Плюсы выбора HTMX:
-- Серверный код написан без учёта дополнительных фреймворков.
-- Сайт работает корректно без JavaScript.
-- Переходы анимированы, ссылки не перезагружают страницу.
-- Для действий с формами HTMX получает оптимизированный код доставки изображений, не перезагружается вся страница.
-
-##### Минусы:
-- Нет красивой AJAX валидации форм. Серверная валидация требует дополнительного клиентского кода, теряется фокус на полях ввода в случае обновления.
-- Прогрессивная разработка накладывает некоторые ограничения. Например, нельзя содержать элементы в шаблоне, которые должны присутствовать при включённом JS. Это относится к индикатору загрузки.
-
-**Итого**: сайт хорошо выполняет свою задачу независимо от услвий выполнения. Озвученные минусы - компромиссы, на которые пришлось пойти ради сохранения доступности, единообразия.
+1. Start the local server: `php artisan serve`.
+2. Generate assets with `npm run build` or `npm run dev` for development.
+3. Open a web browser and navigate to http://localhost:8000.
+4. Choose an image for processing and apply one of the available effects.

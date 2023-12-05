@@ -19,6 +19,7 @@
             <div class="col-12 col-lg-6 mb-2">
                 <div class="transparent-background ratio ratio-1x1 bg-primary-subtle mb-2">
                     @include('partials.preview-image')
+                    <span id="form_loading_indicator" class="h1 only-js htmx-indicator">Loading…</span>
                 </div>
             </div>
             <div class="col-12 col-lg-6 sr">
