@@ -1,6 +1,6 @@
 # ImageEffects
 
-[Site demonstration](./storage/app/public/ImageEffect.webm)
+[ImageEffect.webm](https://github.com/brutalhost/imageeffects/assets/18640248/a82015fa-e062-477c-bab7-906808a810ea)
 
 **ImageEffects**  is a website that provides a set of filters for real-time image processing. It is implemented using the following technologies:
 
