@@ -24,6 +24,7 @@
 ## Installation
 1. Rename `.env.example` to `.env` and fill in the database connection fields.
 2. Run `php artisan key:generate`.
+3. Run `php artisan storage:link`.
 3. Run `php artisan migrate`.
 4. Run `php artisan db:seed --class Database\Seeders\DatabaseSeeder`.
 5. Run `npm install`.
