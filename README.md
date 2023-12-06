@@ -1,6 +1,6 @@
 # ImageEffects
 
-![Site demonstration](./storage/app/public/ImageEffect.webm)
+[Site demonstration](./storage/app/public/ImageEffect.webm)
 
 **ImageEffects**  is a website that provides a set of filters for real-time image processing. It is implemented using the following technologies:
 
