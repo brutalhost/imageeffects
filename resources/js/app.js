@@ -1,13 +1,21 @@
 import "bootstrap/dist/js/bootstrap.min.js";
-import htmx from 'htmx.org';
 import Toastify from 'toastify-js'
+import htmx from 'htmx.org';
 
 window.htmx = htmx;
 
-(function () {
-    console.log("../css/htmx-loaded.css");
-    import("../css/htmx-loaded.css");
-})();
+if (window.htmx) {
+    (function () {
+        console.log("../css/htmx-loaded.css");
+        import("../css/htmx-loaded.css");
+    })();
+}
+
+// htmx.logger = function(elt, event, data) {
+//     if(console) {
+//         console.log(event, elt, data);
+//     }
+// }
 
 function executeScript(responseText) {
     eval(responseText); // Выполнение полученного скрипта

@@ -3,7 +3,7 @@
     @csrf
     <button class="btn btn-success" type="submit">Download</button>
 </form>
-<a class="btn btn-primary" href="{{ url()->current() }}">Reset</a>
+<a hx-boost="false" class="btn btn-primary" href="{{ url()->current() }}">Reset</a>
 <form class="d-inline" action="{{ route('ajax.delete-image') }}" method="POST"
       hx-confirm="Are you sure you wish to delete image from server?">
     @csrf
