@@ -38,8 +38,8 @@ class DatabaseSeeder extends Seeder
             'description' => 'This effect is used when creating stencils, as it allows you to emphasize the contours of the image, making it more contrasting and easily distinguishable. Using the stencil effect helps create an eye-catching and memorable design by drawing attention to the key elements of the image.',
             'image'       => 'demotivator.jpg'
         ]);
-//        $effect1->save();
-//        $effect2->save();
+        $effect1->save();
+        $effect2->save();
         $effect3->save();
     }
 }
